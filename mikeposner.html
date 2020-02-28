@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mike Posner</title>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+	<link rel="icon" href="source/playerlogo.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+
+</head>
+<body>
+	<header>
+	<div id="nav-bar">
+		<div id="header-leftside">
+			<img src="source/playerlogo.png" id="logo" class="animated pulse infinite">
+			<a href="musicplayerhome.html" id="player">Ninja<br><b>Studio</b></a>
+			<a href=""class="center-align" id="fav">Favourites</a>
+		</div>
+		<div id="header-rightside">
+			<form id="search-bar" class="header-resp">
+				<button type="button" id="search-icon">
+					<i class="fas fa-search"></i>
+				</button>
+				<input type="text" name="search-item" placeholder="Search..." id="searcher" class="left-negative">
+				<button type="button" class="left-negative" id="mic-icon">
+					<i class="fas fa-microphone"></i>
+				</button>
+			</form>
+			<div id="notification" class="center-align header-resp">
+				<i class="fas fa-bell"></i>
+			</div>
+			<div id="profile" class="center-align header-resp">
+					<img src="source/profileimage.jpg" id="profile-image">
+			</div>
+		</div>
+		<div class = "dropdown-menu text-right">
+            <div class="bars">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class ="dropdown-list">
+                <ul class = "no-list-style">
+                    <li>
+   		                <a href="" class="a-style-none"> Notifications </a>
+                    </li>
+                    <li>
+                        <a href="" class="a-style-none"> Profile </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	</header>
+
+	<main>
+		<div id="artist-info" class="animated flash">
+			<img src="source/mike.jpg" id="ed-desc-image">
+			<div id="artist-desc">
+				<h1>Mike Posner</h1>
+				<h3 class="desc-font-color">American Singer</h3>
+				<p class="desc-font-color">Michael Robert Henrion Posner is an American singer, songwriter, rapper, poet, and record producer. Posner released his debut album, 31 Minutes to Takeoff, on August 10, 2010. The album includes the US Billboard Hot 100 top 10 single "Cooler than Me" as well as the top 20 single "Please Don't Go". In 2016 he released his second album, At Night, Alone. A remix of his 2015 single "I Took a Pill in Ibiza" from the album peaked in the top 10 on the charts in 27 countries around the world.</p>
+				<form style="display: inline-block;">
+					<button type="button" id="play-all">
+						<p>Play all</p>	
+					</button>
+				</form>
+				<a href="" class="a-style-none">Follow</a>
+			</div>
+		</div>
+		<div class="queue-song song-background">
+			<i class="fas fa-align-right center-align icon-rotate queue-prefix"></i>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/jeena.jpg" class="queue-song-image queue-resp">
+			</a>
+			<div class="queue-song-name">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Jeena</h3>
+					<p>Atif Aslam</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song song-background">
+			<p class="center-align queue-prefix">01</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/kehte.jpg" class="queue-song-image  queue-resp">
+			</a>
+			<div class="queue-song-name">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Kehte</h3>
+					<p>Arjit Singh</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon ">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song song-background">
+			<p class="center-align queue-prefix">02</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/godzilla.jpg" class="queue-song-image queue-resp">
+			</a>
+			<div class="queue-song-name">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Godzilla</h3>
+					<p>Eminem</p>
+				</a>
+			</div>
+			<a href="#play-bar" class="a-style-none favourite-icon">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song song-background">
+			<p class="center-align queue-prefix">03</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/kudukku.jpg" class="queue-song-image queue-resp">
+			</a>
+			<div class="queue-song-name">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Kudukku</h3>
+					<p>Shaan</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon ">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song song-background">
+			<p class="center-align queue-prefix">04</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/castle.jpg" class="queue-song-image queue-resp">
+			</a>
+			<div class="queue-song-name">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Castle</h3>
+					<p>Ed Sheeran</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song song-background">
+			<p class="center-align queue-prefix">05</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/fikar.jpg" class="queue-song-image queue-resp">
+			</a>
+			<div class="queue-song-name">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Fikar not</h3>
+					<p>Dev Negi</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song song-background">
+			<p class="center-align queue-prefix">06</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/score.jpg" class="queue-song-image queue-resp">
+			</a>
+			<div class="queue-song-name">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Born</h3>
+					<p>The Score</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+
+	</main>
+
+	<aside>
+		<div id="queue-heading">
+			<h1>Queue</h1>
+			<div class = "dropdown-menu text-right">
+    			<div class="queue-dropdown queue-resp">
+    				Queue<i class="fas fa-chevron-down"></i>
+   				</div>
+				<div class ="dropdown-list queue-list">
+					<ul class = "no-list-style ul-width">
+                        <li >
+                    	  	<a href="" class="a-style-none">
+                       			Playlist
+                       		</a>
+                       	</li>
+                       	<li>	
+                           	<a href="" class="a-style-none">
+                           		Favourite songs
+                           	</a>
+                       	</li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+		<div class="queue-song">
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/jeena.jpg" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Jeena</h3>
+					<p>Atif Aslam</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/kehte.jpg" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Kehte</h3>
+					<p>Arjit Singh</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/godzilla.jpg" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Godzilla</h3>
+					<p>Eminem</p>
+				</a>
+			</div>
+			<a href="#play-bar" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/kudukku.jpg" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Kudukku</h3>
+					<p>Shaan</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<h1>Recently Played</h1>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">01</p>
+			<a href="#play-bar" class="a-style-none center-align rp-song-image">
+				<img src="source/queue/kehte.jpg" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Kehte</h3>
+					<p>Arjit Singh</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">02</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/godzilla.jpg" class="queue-song-image rp-song-image">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Godzilla</h3>
+					<p>Eminem</p>
+				</a>
+			</div>
+			<a href="#play-bar" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">03</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/kudukku.jpg" class="queue-song-image rp-song-image">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Kudukku</h3>
+					<p>Shaan</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">04</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/castle.jpg" class="queue-song-image ">
+			</a>
+			<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Castle</h3>
+					<p>Ed Sheeran</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">05</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/fikar.jpg" class="queue-song-image ">
+			</a>
+		<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Fikar not</h3>
+					<p>Dev Negi</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+		<div class="queue-song">
+			<p class="center-align queue-prefix">06</p>
+			<a href="#play-bar" class="a-style-none center-align">
+				<img src="source/queue/score.jpg" class="queue-song-image ">
+			</a>
+		<div class="queue-song-name queue-resp">
+				<a href="#play-bar" class="a-style-none">
+					<h3>Born</h3>
+					<p>The Score</p>
+				</a>
+			</div>
+			<a href="" class="a-style-none favourite-icon queue-resp">
+				<i class="fas fa-heart heart-hover"></i>
+			</a>
+		</div>
+
+	</aside>
+
+	<footer> 
+	<div id="play-bar">
+		<div class="player-rightside">
+			<div class="queue-song">
+				<img src="source/queue/score.jpg" class="player-song-image center-align">
+				<div class="queue-song-name name-play-bar-resp">
+					<h3>Born</h3>
+					<p>The Score</p>
+				</div>
+				<a href="" class="a-style-none favourite-icon name-play-bar-resp">
+					<i class="fas fa-ban ban-hover"></i>
+					<i class="fas fa-heart heart-hover"></i>
+				</a>
+			</div>
+		</div>
+		<div class="player-center">
+			<div class="player-controls">
+				<i class="fas fa-random center-align control-play-bar-resp"></i>
+				<i class="fas fa-step-backward center-align"></i>
+				<i class="fas fa-play-circle center-align" id="play-button"></i>
+				<i class="fas fa-step-backward icon-rotate-full center-align"></i>
+				<i class="fas fa-undo-alt center-align control-play-bar-resp"></i>
+			</div>
+			<span class="song-duration control-play-bar-resp">0:00</span>
+			<div class="progress">
+				<div class="played"></div>
+			</div>
+			<span class="song-duration control-play-bar-resp">4:44</span>
+			</div>
+			<div class="player-leftside">
+				<i class="fas fa-stream center-align volume-play-bar-resp"></i>
+				<i class="fab fa-soundcloud center-align volume-play-bar-resp"></i>
+				<div class="center-align">
+					<span ><i class="fas fa-volume-up "></i></span>
+					<div class="progress volume-progress" >
+						<div class="played "></div>
+					</div>
+				</div>
+				<i class="fas fa-expand center-align volume-play-bar-resp"></i>
+				<a href="#" class="a-style-none">x</a>
+			</div>
+	</footer>
+</body>
+</html>
